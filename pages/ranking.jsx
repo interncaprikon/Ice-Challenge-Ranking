@@ -218,13 +218,13 @@ export async function getServerSideProps() {
       
         hRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
@@ -280,13 +280,13 @@ export async function getServerSideProps() {
       
         kRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
@@ -342,13 +342,13 @@ export async function getServerSideProps() {
       
         nRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
           name: student.name,
-          schoolName: student.schoolName,
+          schoolName: d.creatorName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
