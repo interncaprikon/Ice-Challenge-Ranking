@@ -88,11 +88,11 @@ export default function RankingList({
     
     <Box textAlign='center'>
     <Grid container justify="center">
-      <ButtonGroup className={classes.bgroup} 
+      <ButtonGroup style="position:fixed;" className={classes.bgroup} 
         variant="contained" color="secondary" aria-label="contained primary button group"
         display='flex' justifyContent='center'
       >
-        <Button
+        <Button style="position:fixed;"
           onClick={() => {
             loadsRankings(oRankings);
             setDivisionTitle("Overall");
@@ -100,7 +100,7 @@ export default function RankingList({
         >
           Overall
         </Button>
-        <Button
+        <Button style="position:fixed;"
           onClick={() => {
             loadsRankings(hRankings);
             setDivisionTitle("Hong Kong Island");
@@ -108,7 +108,7 @@ export default function RankingList({
         >
           Hong Kong Island
         </Button>
-        <Button
+        <Button style="position:fixed;"
           onClick={() => {
             loadsRankings(kRankings);
             setDivisionTitle("Kowloon");
@@ -116,7 +116,7 @@ export default function RankingList({
         >
           Kowloon
         </Button>
-        <Button
+        <Button style="position:fixed;"
           onClick={() => {
             loadsRankings(nRankings);
             setDivisionTitle("New Territories");
