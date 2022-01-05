@@ -60,11 +60,18 @@ export default function RankingList({
   function loadsRankings(rankings) {
     let data = [];
     rankings.sort(sortBy("score"));
-
+    var oldscore=0;
+    var oldrank=0;
     rankings.map((rank, index) => {
+      if (oldscore===rank.score){
       data.push(
+        createData(oldindex, rank.name, rank.schoolName, rank.score)
+      );}
+      else{data.push(
         createData(index + 1, rank.name, rank.schoolName, rank.score)
-      );
+      );}
+      var oldscore=rank.score;
+      var oldrank=rank.index+1;
     });
     setRowData(data);
   }
