@@ -20,6 +20,7 @@ const useStyles = makeStyles({
   table: {
     maxWidth:'95%',
     minWidth:350,
+    position:'fixed',
   },
   bgroup:{
     maxWidth:'95%',
@@ -63,9 +64,9 @@ export default function RankingList({
     var oldscore=0;
     var oldrank=0;
     rankings.map((rank, index) => {
-      if (oldscore===rank.score){
+      if (oldscore==rank.score){
       data.push(
-        createData(oldindex, rank.name, rank.schoolName, rank.score)
+        createData(oldrank, rank.name, rank.schoolName, rank.score)
       );}
       else{data.push(
         createData(index + 1, rank.name, rank.schoolName, rank.score)
