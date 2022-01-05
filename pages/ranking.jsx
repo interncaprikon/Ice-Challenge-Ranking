@@ -239,7 +239,7 @@ export async function getServerSideProps() {
   const KLNschoolData = [
     
     {
-      "codecomabtName": "XXXXXXX",
+      "codecomabtName": "XXXXX",
       "creatorID": "564ba9b7a33967be1312ae6d",
       "name": "Diamond AI",
       "schoolName": "KLN School Name 1",
