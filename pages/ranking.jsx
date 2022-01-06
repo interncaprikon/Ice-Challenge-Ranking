@@ -52,7 +52,7 @@ const theme = createTheme({
       main: "#c2240b",
       light: "#ae240e"
     },
-    clicked: {
+    primary: {
       main: "#ffffff",
       light: "#ffffff"
     }
@@ -80,7 +80,7 @@ export default function RankingList({
   }, []);
   function setColors(buttonindex){
     for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
-      if (colorsIndex==buttonindex){colors[colorsIndex]='success'}
+      if (colorsIndex==buttonindex){colors[colorsIndex]='primary'}
       else{colors[colorsIndex]='secondary'}
 
     }
