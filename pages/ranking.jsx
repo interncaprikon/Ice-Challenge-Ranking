@@ -53,8 +53,8 @@ const theme = createTheme({
       light: "#ae240e"
     },
     clicked: {
-      main: "#ffffff",
-      light: "#000000"
+      main: "#ae240e",
+      light: "#ae240e"
     }
   }
 });
@@ -80,7 +80,7 @@ export default function RankingList({
   }, []);
   function setColors(buttonindex){
     for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
-      if (colorsIndex=buttonindex){colors[colorsIndex]='clicked'}
+      if (colorsIndex==buttonindex){colors[colorsIndex]='clicked'}
       else{colors[colorsIndex]='secondary'}
 
     }
