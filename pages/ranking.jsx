@@ -20,8 +20,6 @@ const useStyles = makeStyles({
   table: {
     maxWidth:'95%',
     minWidth:350,
-    position:'relative',
-    display:'block',
   },
   bgroup:{
     maxWidth:'95%',
