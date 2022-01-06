@@ -15,7 +15,7 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { createTheme, ThemeProvider } from '@material-ui/core';
-var colors=['secondary','secondary','secondary','secondary']
+var colors=['clicked','secondary','secondary','secondary']
 const useStyles = makeStyles({
   table: {
     maxHeight:500,
@@ -53,8 +53,8 @@ const theme = createTheme({
       light: "#ae240e"
     },
     clicked: {
-      main: "#ae240e",
-      light: "#c2240b"
+      main: "#ffffff",
+      light: "#000000"
     }
   }
 });
