@@ -79,7 +79,7 @@ export default function RankingList({
     loadsRankings(oRankings);
   }, []);
   function setColors(buttonindex){
-    for (colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
+    for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
       if (colorsIndex=buttonindex){colors[colorsIndex]='clicked'}
       else{colors[colorsIndex]='secondary'}
 
