@@ -777,14 +777,14 @@ export async function getServerSideProps() {
     if (student) {
       
         hRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
@@ -2423,14 +2423,14 @@ export async function getServerSideProps() {
     if (student) {
       
         kRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
@@ -3974,14 +3974,14 @@ export async function getServerSideProps() {
     if (student) {
       
         nRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
         oRankings.push({
-          name: student.name,
-          schoolName: d.creatorName,
+          name: d.creatorName,
+          schoolName: student.schoolName,
           score: Math.round(d.leagues[0].stats.totalScore * 100),
           
         });
