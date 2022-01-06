@@ -144,7 +144,7 @@ export default function RankingList({
       </Grid>
       </Box>
       <Typography variant="h4" align="center" gutterBottom>
-        {divisionTitle} 
+                                  
       </Typography>
       <Typography variant="h4" align="center" gutterBottom>
         {divisionTitle} 
