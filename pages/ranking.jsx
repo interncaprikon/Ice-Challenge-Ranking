@@ -101,7 +101,7 @@ export default function RankingList({
     />
   </Head>
   <ThemeProvider theme={theme}>
-    <Container maxWidth="md">
+    <Container className={classes.typ} maxWidth="md">
     
     <Box className={classes.typ} textAlign='center'>
     <Grid container className={classes.typ} justify="center">
