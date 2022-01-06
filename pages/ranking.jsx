@@ -30,10 +30,12 @@ const useStyles = makeStyles({
     zIndex:1,
   },
   
-  typ:{
+  sticky:{
     position:'sticky',
   },
-
+  fixed:{
+    position:'fixed',
+  },
 });
 
 const theme = createTheme({
@@ -101,10 +103,10 @@ export default function RankingList({
     />
   </Head>
   <ThemeProvider theme={theme}>
-    <Container className={classes.typ} maxWidth="md">
+    <Container className={classes.fixed} maxWidth="md">
     
-    <Box className={classes.typ} textAlign='center'>
-    <Grid container className={classes.typ} justify="center">
+    <Box className={classes.sticky} textAlign='center'>
+    <Grid container className={classes.sticky} justify="center">
       <ButtonGroup  className={classes.bgroup} 
         variant="contained" color="secondary" aria-label="contained primary button group"
         display='flex' justifyContent='center'
@@ -145,7 +147,7 @@ export default function RankingList({
       </ButtonGroup>
       </Grid>
       </Box>
-      <Typography className={classes.typ} variant="h4" align="center" >
+      <Typography className={classes.sticky} variant="h4" align="center" >
       {divisionTitle}
       </Typography>
       
