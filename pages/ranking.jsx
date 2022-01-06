@@ -48,14 +48,15 @@ const useStyles = makeStyles({
 
 const theme = createTheme({
   palette: {
+    primary: {
+      main: "#ae240e",
+      light: "#ae240e"
+    },
     secondary: {
       main: "#c2240b",
       light: "#ae240e"
     },
-    primary: {
-      main: "#ffffff",
-      light: "#ffffff"
-    }
+    
   }
 });
 
