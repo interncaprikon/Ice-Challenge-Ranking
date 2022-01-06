@@ -29,7 +29,8 @@ const useStyles = makeStyles({
     display:'block',
     zIndex:1,
   },
-  Typography:{
+  
+  typ:{
     position:'sticky',
   },
 
@@ -102,8 +103,8 @@ export default function RankingList({
   <ThemeProvider theme={theme}>
     <Container maxWidth="md">
     
-    <Box textAlign='center'>
-    <Grid container justify="center">
+    <Box className={classes.typ} textAlign='center'>
+    <Grid container className={classes.typ} justify="center">
       <ButtonGroup  className={classes.bgroup} 
         variant="contained" color="secondary" aria-label="contained primary button group"
         display='flex' justifyContent='center'
@@ -144,7 +145,7 @@ export default function RankingList({
       </ButtonGroup>
       </Grid>
       </Box>
-      <Typography variant="h4" align="center" >
+      <Typography className={classes.typ} variant="h4" align="center" >
       {divisionTitle}
       </Typography>
       
