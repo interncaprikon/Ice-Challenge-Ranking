@@ -78,9 +78,9 @@ export default function RankingList({
   useEffect(() => {
     loadsRankings(oRankings);
   }, []);
-  function setColors(index){
+  function setColors(buttonindex){
     for (colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
-      if (colorsIndex=index){colors[colorsIndex]='clicked'}
+      if (colorsIndex=buttonindex){colors[colorsIndex]='clicked'}
       else{colors[colorsIndex]='secondary'}
 
     }
