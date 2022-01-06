@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   table: {
     maxWidth:'95%',
     minWidth:350,
-    position:'relative',
+    overflow:'scroll',
   },
   bgroup:{
     maxWidth:'95%',
@@ -35,6 +35,9 @@ const useStyles = makeStyles({
   },
   fixed:{
     position:'fixed',
+    margin: "5% auto", /* Will not center vertically and won't work in IE6/7. */
+    left: 0,
+    right: 0,
   },
   relative:{
     position:'relative',
