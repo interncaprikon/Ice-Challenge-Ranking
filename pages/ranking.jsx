@@ -18,7 +18,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles({
   table: {
-    maxHeight=100,
+    maxHeight:50,
     maxWidth:'95%',
     minWidth:350,
     overflow:'scroll',
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     right: 0,
   },
   tContain:{
-    maxHeight=100,
+    maxHeight:50,
     overflow:'scroll',
     position:'relative',
   },
