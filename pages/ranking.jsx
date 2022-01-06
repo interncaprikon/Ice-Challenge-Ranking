@@ -15,7 +15,7 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { createTheme, ThemeProvider } from '@material-ui/core';
-
+var colors=['secondary','secondary','secondary','secondary']
 const useStyles = makeStyles({
   table: {
     maxHeight:500,
@@ -51,6 +51,10 @@ const theme = createTheme({
     secondary: {
       main: "#c2240b",
       light: "#ae240e"
+    },
+    clicked: {
+      main: "#ae240e",
+      light: "#c2240b"
     }
   }
 });
@@ -74,7 +78,13 @@ export default function RankingList({
   useEffect(() => {
     loadsRankings(oRankings);
   }, []);
+  function setColors(index){
+    for (colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
+      if (colorsIndex=index){colors[colorsIndex]='clicked'}
+      else{colors[colorsIndex]='secondary'}
 
+    }
+  }
   function loadsRankings(rankings) {
     let data = [];
     rankings.sort(sortBy("score"));
@@ -116,35 +126,39 @@ export default function RankingList({
     <Box className={classes.sticky} textAlign='center'>
     <Grid container className={classes.sticky} justify="center">
       <ButtonGroup  className={classes.bgroup} 
-        variant="contained" color="secondary" aria-label="contained primary button group"
+        variant="contained"  aria-label="contained primary button group"
         display='flex' justifyContent='center'
       >
-        <Button
+        <Button color={colors[0]}
           onClick={() => {
+            setColors(0);
             loadsRankings(oRankings);
             setDivisionTitle("Overall");
           }}
         >
           Overall
         </Button>
-        <Button 
+        <Button color={colors[1]}
           onClick={() => {
+            setColors(1);
             loadsRankings(hRankings);
             setDivisionTitle("Hong Kong Island");
           }}
         >
           Hong Kong Island
         </Button>
-        <Button 
+        <Button color={colors[2]}
           onClick={() => {
+            setColors(2);
             loadsRankings(kRankings);
             setDivisionTitle("Kowloon");
           }}
         >
           Kowloon
         </Button>
-        <Button 
+        <Button color={colors[3]}
           onClick={() => {
+            setColors(3);
             loadsRankings(nRankings);
             setDivisionTitle("New Territories");
           }}
