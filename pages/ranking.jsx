@@ -20,7 +20,7 @@ const useStyles = makeStyles({
   table: {
     maxHeight:500,
     maxWidth:'95%',
-    minWidth:350,
+    minWidth:300,
     overflowY:'scroll',
   },
   bgroup:{
