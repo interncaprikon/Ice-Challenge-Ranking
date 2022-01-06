@@ -18,7 +18,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles({
   table: {
-    maxHeight=10,
+    maxHeight=100,
     maxWidth:'95%',
     minWidth:350,
     overflow:'scroll',
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     right: 0,
   },
   tContain:{
-    maxHeight=10,
+    maxHeight=100,
     overflow:'scroll',
     position:'relative',
   },
@@ -161,7 +161,7 @@ export default function RankingList({
       </Typography>
       
       <TableContainer className={classes.tContain} component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
+        <Table stickyHeader className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Rank</TableCell>
