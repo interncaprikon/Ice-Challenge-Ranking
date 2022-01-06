@@ -53,8 +53,8 @@ const theme = createTheme({
       light: "#ae240e"
     },
     clicked: {
-      main: "#ae240e",
-      light: "#ae240e"
+      main: "#ffffff",
+      light: "#ffffff"
     }
   }
 });
