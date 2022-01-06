@@ -80,7 +80,7 @@ export default function RankingList({
   }, []);
   function setColors(buttonindex){
     for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
-      if (colorsIndex==buttonindex){colors[colorsIndex]='clicked'}
+      if (colorsIndex==buttonindex){colors[colorsIndex]='success'}
       else{colors[colorsIndex]='secondary'}
 
     }
