@@ -146,9 +146,7 @@ export default function RankingList({
       <Typography variant="h4" align="center" >
       {divisionTitle}
       </Typography>
-      <Typography variant="h4" align="center" gutterBottom>
-        {divisionTitle} 
-      </Typography>
+      
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
