@@ -24,12 +24,12 @@ const useStyles = makeStyles({
   bgroup:{
     maxWidth:'95%',
     minWidth:350,
-    position:'fixed',
+    position:'sticky',
     display:'block',
     zIndex:1,
   },
   Typography:{
-    position:'fixed',
+    position:'sticky',
   },
 
 });
