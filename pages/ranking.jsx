@@ -35,11 +35,12 @@ const useStyles = makeStyles({
   },
   fixed:{
     position:'fixed',
-    margin: "5% auto", /* Will not center vertically and won't work in IE6/7. */
+    margin: "auto", /* Will not center vertically and won't work in IE6/7. */
     left: 0,
     right: 0,
   },
   relative:{
+    overflow:'scroll',
     position:'relative',
   },
 });
@@ -157,7 +158,7 @@ export default function RankingList({
       {divisionTitle}
       </Typography>
       
-      <TableContainer className={classes.relative} component={Paper}>
+      <TableContainer className={classes.tContain} component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
