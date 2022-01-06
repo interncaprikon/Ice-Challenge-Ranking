@@ -27,7 +27,11 @@ const useStyles = makeStyles({
     position:'fixed',
     display:'block',
     zIndex:1,
-  }
+  },
+  Typography:{
+    position:'fixed',
+  },
+
 });
 
 const theme = createTheme({
