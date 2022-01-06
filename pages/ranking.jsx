@@ -39,7 +39,8 @@ const useStyles = makeStyles({
     left: 0,
     right: 0,
   },
-  relative:{
+  tContain:{
+    
     overflow:'scroll',
     position:'relative',
   },
