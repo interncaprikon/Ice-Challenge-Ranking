@@ -48,10 +48,7 @@ const useStyles = makeStyles({
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#ae240e",
-      light: "#ae240e"
-    },
+    
     secondary: {
       main: "#c2240b",
       light: "#ae240e"
@@ -81,7 +78,7 @@ export default function RankingList({
   }, []);
   function setColors(buttonindex){
     for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
-      if (colorsIndex==buttonindex){colors[colorsIndex]='primary'}
+      if (colorsIndex==buttonindex){colors[colorsIndex]='clicked'}
       else{colors[colorsIndex]='secondary'}
 
     }
