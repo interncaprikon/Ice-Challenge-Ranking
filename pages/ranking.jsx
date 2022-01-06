@@ -143,8 +143,8 @@ export default function RankingList({
       </ButtonGroup>
       </Grid>
       </Box>
-      <Typography variant="h4" align="center" gutterBottom>
-                                  
+      <Typography variant="h4" align="center" >
+      {divisionTitle}
       </Typography>
       <Typography variant="h4" align="center" gutterBottom>
         {divisionTitle} 
