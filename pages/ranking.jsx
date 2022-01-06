@@ -36,6 +36,9 @@ const useStyles = makeStyles({
   fixed:{
     position:'fixed',
   },
+  relative:{
+    position:'relative',
+  },
 });
 
 const theme = createTheme({
@@ -151,7 +154,7 @@ export default function RankingList({
       {divisionTitle}
       </Typography>
       
-      <TableContainer component={Paper}>
+      <TableContainer className={classes.relative} component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
