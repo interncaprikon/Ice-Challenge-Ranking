@@ -4001,12 +4001,7 @@ export async function getServerSideProps() {
   
 
   const MOschoolData = [
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba9b7a33967be1312ae6d",
-      "name": "Diamond AI",
-      "schoolName": "HKI School Name 11",
-    },
+    
     {
       "codecomabtName": "ICE-MOP-1027",
       "schoolName": "Macao Pooi To Middle School Taipa Primary School",
