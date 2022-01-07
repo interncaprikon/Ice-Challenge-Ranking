@@ -206,7 +206,12 @@ export async function getServerSideProps() {
   
 
   const HKschoolData = [
-    	
+    {
+      "codecomabtName": "XXXXXXX",
+      "creatorID": "564ba91aa33967be1312ae65",
+      "name": "Gold AI",
+      "schoolName": "HKI School Name 3",
+    },
      {
        "codecomabtName": "ICE-HKP-0001",
        "schoolName": "SKH ST PETER'S PRIMARY SCHOOL",
