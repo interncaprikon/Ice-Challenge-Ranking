@@ -129,7 +129,7 @@ export default function RankingList({
   </Head>
   {havehead.map((i) => (
   <ThemeProvider theme={theme}>
-    <Container className={classes.fixed} maxWidth="md">
+    <Container id="leaderboardContainer" className={classes.fixed} maxWidth="md">
     
            <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
         Leaderboard
