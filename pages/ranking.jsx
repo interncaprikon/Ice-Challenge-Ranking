@@ -2706,6 +2706,11 @@ export async function getServerSideProps() {
        "creatorID": "61d2923df7358e11a02645eb"
      },
      {
+      "codecomabtName": "ICE-NTP-0927",
+      "schoolName": "HKBUAS WONG KAM FAI SECONDARY & PRIMARY SCHOOL (PRIMARY)",
+      "creatorID": "61d295b3f7358e11a02646e9"
+    },
+     {
        "codecomabtName": "ICE-NTP-0674",
        "schoolName": "SKH HOLY SPIRIT PRIMARY SCHOOL",
        "creatorID": "61d2923ff7358e11a02645ec"
@@ -3969,7 +3974,47 @@ export async function getServerSideProps() {
        "codecomabtName": "ICE-NTS-0926",
        "schoolName": "TIACC Woo Hon Fai Secondary School",
        "creatorID": "61d295b0f7358e11a02646e8"
-     }
+     },
+     {
+      "codecomabtName": "ICE-NTS-0977",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29672f7358e11a026471b"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0978",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29675f7358e11a026471c"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0979",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29678f7358e11a026471d"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0980",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d2967cf7358e11a026471e"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0981",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d2967ff7358e11a026471f"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0982",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29681f7358e11a0264720"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0983",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29685f7358e11a0264721"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0984",
+      "schoolName": "CARMEL ALISON LAM FOUNDATION SECONDARY SCHOOL",
+      "creatorID": "61d29689f7358e11a0264722"
+    }
     ];
 
 
