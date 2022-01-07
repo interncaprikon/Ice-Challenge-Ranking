@@ -110,7 +110,8 @@ export default function RankingList({
   for (var divisionIndex=0;divisionIndex<districtRankings.length;divisionIndex++){
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
-  }
+  };
+  if (notEmpty.length){var havehead=[1]}else{var havehead=[]}
 
   return (
       <>
@@ -127,8 +128,14 @@ export default function RankingList({
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </Head>
+  {havehead.map((i) => (
   <ThemeProvider theme={theme}>
     <Container className={classes.fixed} maxWidth="md">
+    
+           <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
+        Leaderboard
+      </Typography>
+           
     
     <Box className={classes.sticky} textAlign='center'>
     <Grid container className={classes.sticky} justify="center">
@@ -179,6 +186,7 @@ export default function RankingList({
       </TableContainer>
     </Container>
     </ThemeProvider>
+    ))}
     </>
   );
 }
@@ -198,36 +206,7 @@ export async function getServerSideProps() {
   
 
   const HKschoolData = [
-    {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba9b7a33967be1312ae6d",
-          "name": "Diamond AI",
-          "schoolName": "HKI School Name 11",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba95ca33967be1312ae69",
-          "name": "Platinum AI",
-          "schoolName": "HKI School Name 2",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba91aa33967be1312ae65",
-          "name": "Gold AI",
-          "schoolName": "HKI School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba830a33967be1312ae61",
-          "name": "Silver AI",
-          "schoolName": "HKI School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba6cea33967be1312ae59",
-          "name": "Bronze AI",
-          "schoolName": "HKI School Name 4",
-        },
+    	
      {
        "codecomabtName": "ICE-HKP-0001",
        "schoolName": "SKH ST PETER'S PRIMARY SCHOOL",
@@ -804,36 +783,7 @@ export async function getServerSideProps() {
   
 
   const KLNschoolData = [
-    {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba9b7a33967be1312ae6d",
-          "name": "Diamond AI",
-          "schoolName": "KLN School Name 1",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba95ca33967be1312ae69",
-          "name": "Platinum AI",
-          "schoolName": "KLN School Name 2",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba91aa33967be1312ae65",
-          "name": "Gold AI",
-          "schoolName": "KLN School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba830a33967be1312ae61",
-          "name": "Silver AI",
-          "schoolName": "KLN School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba6cea33967be1312ae59",
-          "name": "Bronze AI",
-          "schoolName": "KLN School Name 4",
-        },
+   
      {
        "codecomabtName": "ICE-KLNP-0210",
        "schoolName": "BISHOP WALSH PRIMARY SCHOOL",
@@ -2450,36 +2400,7 @@ export async function getServerSideProps() {
   
 
   const NTschoolData = [
-    {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba9b7a33967be1312ae6d",
-          "name": "Diamond AI",
-          "schoolName": "NT School Name 1",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba95ca33967be1312ae69",
-          "name": "Platinum AI",
-          "schoolName": "NT School Name 2",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba91aa33967be1312ae65",
-          "name": "Gold AI",
-          "schoolName": "NT School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba830a33967be1312ae61",
-          "name": "Silver AI",
-          "schoolName": "NT School Name 3",
-        },
-        {
-          "codecomabtName": "XXXXXXX",
-          "creatorID": "564ba6cea33967be1312ae59",
-          "name": "Bronze AI",
-          "schoolName": "NT School Name 4",
-        },
+    
      {
        "codecomabtName": "ICE-NTP-0628",
        "schoolName": "HK & MACAU LUTHERAN CHURCH PRIMARY SCHOOL",
