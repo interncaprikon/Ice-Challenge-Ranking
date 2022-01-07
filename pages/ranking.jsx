@@ -19,7 +19,6 @@ var colors=['clicked','secondary','secondary','secondary','secondary']
 
 const useStyles = makeStyles({
   table: {
-    height:500,
     maxHeight:500,
     minWidth:300,
     overflowY:'scroll',
@@ -130,7 +129,7 @@ export default function RankingList({
   </Head>
   {havehead.map((i) => (
   <ThemeProvider theme={theme}>
-    <Container  className={classes.fixed} maxWidth="md">
+    <Container className={classes.fixed} maxWidth="md">
     
            <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
         Leaderboard
@@ -206,12 +205,6 @@ export async function getServerSideProps() {
   
 
   const HKschoolData = [
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba91aa33967be1312ae65",
-      "name": "Gold AI",
-      "schoolName": "HKI School Name 3",
-    },
      {
        "codecomabtName": "ICE-HKP-0001",
        "schoolName": "SKH ST PETER'S PRIMARY SCHOOL",
