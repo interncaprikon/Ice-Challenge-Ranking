@@ -15,7 +15,8 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { createTheme, ThemeProvider } from '@material-ui/core';
-var colors=['clicked','secondary','secondary','secondary']
+var colors=['clicked','secondary','secondary','secondary','secondary']
+
 const useStyles = makeStyles({
   table: {
     maxHeight:500,
@@ -68,6 +69,7 @@ export default function RankingList({
   kRankings,
   nRankings,
   oRankings,
+  mRankings,
 }) {
   const classes = useStyles();
   const [rows, setRowData] = useState([]);
@@ -102,6 +104,13 @@ export default function RankingList({
     });
     setRowData(data);
   }
+  const districtRankings=[oRankings,hRankings,kRankings,nRankings,mRankings]
+  const divisionNames=["Overall","Hong Kong Island","Kowloon","New Territories","Macau"]
+  var notEmpty=[]
+  for (var divisionIndex=0;divisionIndex<districtRankings.length;divisionIndex++){
+    if (districtRankings[divisionIndex].length){
+    notEmpty.push(divisionIndex)}
+  }
 
   return (
       <>
@@ -127,42 +136,17 @@ export default function RankingList({
         variant="contained"  aria-label="contained primary button group"
         display='flex' justifyContent='center'
       >
-        <Button color={colors[0]}
-          onClick={() => {
-            setColors(0);
-            loadsRankings(oRankings);
-            setDivisionTitle("Overall");
-          }}
-        >
-          Overall
-        </Button>
-        <Button color={colors[1]}
-          onClick={() => {
-            setColors(1);
-            loadsRankings(hRankings);
-            setDivisionTitle("Hong Kong Island");
-          }}
-        >
-          Hong Kong Island
-        </Button>
-        <Button color={colors[2]}
-          onClick={() => {
-            setColors(2);
-            loadsRankings(kRankings);
-            setDivisionTitle("Kowloon");
-          }}
-        >
-          Kowloon
-        </Button>
-        <Button color={colors[3]}
-          onClick={() => {
-            setColors(3);
-            loadsRankings(nRankings);
-            setDivisionTitle("New Territories");
-          }}
-        >
-          New Territories
-        </Button>
+        {notEmpty.map((districtIndex) => (
+           <Button color={colors[districtIndex]}
+           onClick={() => {
+             setColors(districtIndex);
+             loadsRankings(districtRankings[districtIndex]);
+             setDivisionTitle(divisionNames[districtIndex]);
+           }}
+         >
+           {divisionNames[districtIndex]}
+         </Button>))}
+         
         
       </ButtonGroup>
       </Grid>
@@ -206,6 +190,7 @@ export async function getServerSideProps() {
   const hRankings = [];
   const oRankings = [];
   const nRankings = [];
+  const mRankings = [];
   const hres = await fetch(
     `https://codecombat.com/db/level/5fca06dc8b4da8002889dbf1/rankings?order=-1&scoreOffset=1000000&team=humans&leagues.leagueID=61d3a182f4636d064c6f5de5&limit=100`
   );
@@ -4009,10 +3994,512 @@ export async function getServerSideProps() {
         });
       }
   });
+  const mres = await fetch(
+    `https://codecombat.com/db/level/5fca06dc8b4da8002889dbf1/rankings?order=-1&scoreOffset=1000000&team=humans&leagues.leagueID=61d39821f4636d064c6f5de3&limit=100`
+  );
+  const mdata = await mres.json();
+  
+
+  const MOschoolData = [
+    {
+      "codecomabtName": "XXXXXXX",
+      "creatorID": "564ba9b7a33967be1312ae6d",
+      "name": "Diamond AI",
+      "schoolName": "HKI School Name 11",
+    },
+    {
+      "codecomabtName": "ICE-MOP-1027",
+      "schoolName": "Macao Pooi To Middle School Taipa Primary School",
+      "creatorID": "61d28f5df7358e11a026450c"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1028",
+      "schoolName": "Macao Pooi To Middle School Taipa Primary School",
+      "creatorID": "61d28f61f7358e11a026450d"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1029",
+      "schoolName": "Macao Pooi To Middle School Taipa Primary School",
+      "creatorID": "61d28f64f7358e11a026450e"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1030",
+      "schoolName": "Macao Pooi To Middle School Taipa Primary School",
+      "creatorID": "61d28f67f7358e11a026450f"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1031",
+      "schoolName": "Macao Pooi To Middle School Taipa Primary School",
+      "creatorID": "61d28f6af7358e11a0264510"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1032",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f6df7358e11a0264511"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1033",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f71f7358e11a0264512"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1034",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f74f7358e11a0264513"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1035",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f76f7358e11a0264514"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1036",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f79f7358e11a0264515"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1037",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f7bf7358e11a0264516"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1038",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f7ff7358e11a0264517"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1039",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f84f7358e11a0264518"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1040",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f87f7358e11a0264519"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1041",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f89f7358e11a026451a"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1042",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f8bf7358e11a026451b"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1043",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d28f92f7358e11a026451c"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1044",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28f94f7358e11a026451d"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1045",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28f98f7358e11a026451e"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1046",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28f9df7358e11a026451f"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1047",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fa0f7358e11a0264520"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1048",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fa3f7358e11a0264521"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1049",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fa7f7358e11a0264522"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1050",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28facf7358e11a0264523"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1051",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28faef7358e11a0264524"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1052",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fb1f7358e11a0264525"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1053",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fb5f7358e11a0264526"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1054",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fb8f7358e11a0264527"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1055",
+      "schoolName": "Puiva Middle school of Macao",
+      "creatorID": "61d28fbcf7358e11a0264528"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1056",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fbff7358e11a0264529"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1057",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fc5f7358e11a026452a"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1058",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fc8f7358e11a026452b"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1059",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fcbf7358e11a026452c"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1060",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fcef7358e11a026452d"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1061",
+      "schoolName": "Macau Baptist College",
+      "creatorID": "61d28fd1f7358e11a026452e"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1062",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fd6f7358e11a026452f"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1063",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fd9f7358e11a0264530"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1064",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fdcf7358e11a0264531"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1065",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fdef7358e11a0264532"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1066",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fe1f7358e11a0264533"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1067",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fe6f7358e11a0264534"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1068",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fe9f7358e11a0264535"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1069",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28fecf7358e11a0264536"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1070",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28feff7358e11a0264537"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1071",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28ff2f7358e11a0264538"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1072",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28ff4f7358e11a0264539"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1073",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28ff8f7358e11a026453a"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1074",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28ffbf7358e11a026453b"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1075",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d28ffdf7358e11a026453c"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1076",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29000f7358e11a026453d"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1077",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29007f7358e11a026453e"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1078",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29009f7358e11a026453f"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1079",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d2900df7358e11a0264540"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1080",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d2900ff7358e11a0264541"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1081",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29013f7358e11a0264542"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1082",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29016f7358e11a0264543"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1083",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29018f7358e11a0264544"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1084",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d2901bf7358e11a0264545"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1085",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d2901ef7358e11a0264546"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1086",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29020f7358e11a0264547"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1087",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29023f7358e11a0264548"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1088",
+      "schoolName": "Colégio Diocesano de São José 5",
+      "creatorID": "61d29025f7358e11a0264549"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1089",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29028f7358e11a026454a"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1090",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d2902cf7358e11a026454b"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1091",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d2902ef7358e11a026454c"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1092",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29031f7358e11a026454d"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1093",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29033f7358e11a026454e"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1094",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29036f7358e11a026454f"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1095",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29039f7358e11a0264550"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1096",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d2903cf7358e11a0264551"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1097",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29041f7358e11a0264552"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1098",
+      "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
+      "creatorID": "61d29044f7358e11a0264553"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1099",
+      "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
+      "creatorID": "61d2904cf7358e11a0264554"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1100",
+      "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
+      "creatorID": "61d2904ff7358e11a0264555"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1101",
+      "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
+      "creatorID": "61d29052f7358e11a0264556"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1102",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29054f7358e11a0264557"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1103",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29057f7358e11a0264558"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1104",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2905af7358e11a0264559"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1105",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2905ef7358e11a026455a"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1106",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29062f7358e11a026455b"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1107",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29065f7358e11a026455c"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1108",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2906af7358e11a026455d"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1109",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2906df7358e11a026455e"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1110",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29071f7358e11a026455f"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1111",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29074f7358e11a0264560"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1112",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29077f7358e11a0264561"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1113",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2907af7358e11a0264562"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1114",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2907cf7358e11a0264563"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1115",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2907ff7358e11a0264564"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1116",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29081f7358e11a0264565"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1117",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29083f7358e11a0264566"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1118",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d29087f7358e11a0264567"
+    },
+    {
+      "codecomabtName": "ICE-MOP-1119",
+      "schoolName": "The Affiliated School of the University of Macau",
+      "creatorID": "61d2908af7358e11a0264568"
+    }
+   ];
+
+
+  mdata.map((d) => {
+    let student = MOschoolData.filter(
+      (x) => x.creatorID === d.creator
+    )[0];
+
+    if (student) {
+      
+        mRankings.push({
+          name: d.creatorName,
+          schoolName: student.schoolName,
+          score: Math.round(d.leagues[0].stats.totalScore * 100),
+          
+        });
+        oRankings.push({
+          name: d.creatorName,
+          schoolName: student.schoolName,
+          score: Math.round(d.leagues[0].stats.totalScore * 100),
+          
+        });
+      }
+  });
 
 
 
-  return { props: { hRankings, kRankings, nRankings, oRankings } };
+  return { props: { hRankings, kRankings, nRankings, oRankings,mRankings } };
 }
 
 
