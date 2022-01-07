@@ -167,9 +167,7 @@ export default function RankingList({
       </ButtonGroup>
       </Grid>
       </Box>
-      <Typography className={classes.sticky} variant="h4" align="center" >
-      {divisionTitle}
-      </Typography>
+      
       
       <TableContainer className={classes.tContain} component={Paper}>
         <Table stickyHeader className={classes.table} aria-label="simple table">
