@@ -211,30 +211,7 @@ export async function getServerSideProps() {
       "name": "Diamond AI",
       "schoolName": "HKI School Name 1",
     },
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba95ca33967be1312ae69",
-      "name": "Platinum AI",
-      "schoolName": "HKI School Name 2",
-    },
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba91aa33967be1312ae65",
-      "name": "Gold AI",
-      "schoolName": "HKI School Name 3",
-    },
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba830a33967be1312ae61",
-      "name": "Silver AI",
-      "schoolName": "HKI School Name 3",
-    },
-    {
-      "codecomabtName": "XXXXXXX",
-      "creatorID": "564ba6cea33967be1312ae59",
-      "name": "Bronze AI",
-      "schoolName": "HKI School Name 4",
-    },
+    
      {
        "codecomabtName": "ICE-HKP-0001",
        "schoolName": "SKH ST PETER'S PRIMARY SCHOOL",
