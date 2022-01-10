@@ -4331,6 +4331,26 @@ export async function getServerSideProps() {
       "creatorID": "61d29041f7358e11a0264552"
     },
     {
+      "codecomabtName": "ICE-MOS-1152",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d290faf7358e11a0264589"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1153",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d290fff7358e11a026458a"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1154",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29102f7358e11a026458b"
+    },
+    {
+      "codecomabtName": "ICE-MOS-1155",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29105f7358e11a026458c"
+    },
+    {
       "codecomabtName": "ICE-MOS-1098",
       "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
       "creatorID": "61d29044f7358e11a0264553"
