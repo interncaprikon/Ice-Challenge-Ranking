@@ -750,7 +750,72 @@ export async function getServerSideProps() {
        "codecomabtName": "ICE-HKS-0109",
        "schoolName": "SKH TANG SHIU KIN SECONDARY SCHOOL",
        "creatorID": "61d29e8af7358e11a0264962"
-     }
+     },
+     {
+      "codecomabtName": "ICE-HKP-0110",
+      "schoolName": "ST JOSEPH'S PRIMARY SCHOOL",
+      "creatorID": "61d29e8df7358e11a0264963"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0160",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f34f7358e11a0264995"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0161",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f37f7358e11a0264996"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0162",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f3af7358e11a0264997"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0163",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f3df7358e11a0264998"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0164",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f40f7358e11a0264999"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0165",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f43f7358e11a026499a"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0166",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f46f7358e11a026499b"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0167",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f49f7358e11a026499c"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0168",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f4cf7358e11a026499d"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0169",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f4ff7358e11a026499e"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0170",
+      "schoolName": "St. Stephen's Church College",
+      "creatorID": "61d29f52f7358e11a026499f"
+    },
+    {
+      "codecomabtName": "ICE-HKS-0171",
+      "schoolName": "ST PAUL'S COLLEGE",
+      "creatorID": "61d29f55f7358e11a02649a0"
+    }
     ];
 
 
