@@ -215,7 +215,7 @@ export default function RankingList({
   </Container>
   </ThemeProvider>
     ):(<>
-      <div className="timer-wrapper">
+      
         <div className="timer-inner">
           <div className="timer-segment">
             <span className="time">{days}</span>
@@ -237,7 +237,7 @@ export default function RankingList({
             <span className="label">Seconds</span>
           </div>
         </div>
-      </div>
+     
       
     </>)}
     </>
