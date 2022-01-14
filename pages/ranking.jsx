@@ -110,7 +110,64 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
-  if (notEmpty.length){var havehead=[1]}else{var havehead=[]}
+  hvheadhtml=(<ThemeProvider theme={theme}>
+  <Container className={classes.fixed} maxWidth="md">
+  
+         <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
+      Leaderboard
+    </Typography>
+         
+  
+  <Box className={classes.sticky} textAlign='center'>
+  <Grid container className={classes.sticky} justify="center">
+    <ButtonGroup  className={classes.bgroup} 
+      variant="contained"  aria-label="contained primary button group"
+      display='flex' justifyContent='center'
+    >
+      {notEmpty.map((districtIndex) => (
+         <Button color={colors[districtIndex]}
+         onClick={() => {
+           setColors(districtIndex);
+           loadsRankings(districtRankings[districtIndex]);
+           setDivisionTitle(divisionNames[districtIndex]);
+         }}
+       >
+         {divisionNames[districtIndex]}
+       </Button>))}
+       
+      
+    </ButtonGroup>
+    </Grid>
+    </Box>
+    
+    
+    <TableContainer className={classes.tContain} component={Paper}>
+      <Table stickyHeader className={classes.table} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell>Rank</TableCell>
+            <TableCell align="center">Name</TableCell>
+            <TableCell align="center">School</TableCell>
+            <TableCell align="center">Score</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.order}>
+              <TableCell component="th" scope="row">
+                {row.rank}
+              </TableCell>
+              <TableCell align="center">{row.name}</TableCell>
+              <TableCell align="center">{row.schoolName}</TableCell>
+              <TableCell align="center">{row.score}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  </Container>
+  </ThemeProvider>);
+  if (notEmpty.length){var havehead=[hvheadhtml]}else{var havehead=[]}
 
   return (
       <>
@@ -128,63 +185,7 @@ export default function RankingList({
     />
   </Head>
   {havehead.map((i) => (
-  <ThemeProvider theme={theme}>
-    <Container className={classes.fixed} maxWidth="md">
-    
-           <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
-        Leaderboard
-      </Typography>
-           
-    
-    <Box className={classes.sticky} textAlign='center'>
-    <Grid container className={classes.sticky} justify="center">
-      <ButtonGroup  className={classes.bgroup} 
-        variant="contained"  aria-label="contained primary button group"
-        display='flex' justifyContent='center'
-      >
-        {notEmpty.map((districtIndex) => (
-           <Button color={colors[districtIndex]}
-           onClick={() => {
-             setColors(districtIndex);
-             loadsRankings(districtRankings[districtIndex]);
-             setDivisionTitle(divisionNames[districtIndex]);
-           }}
-         >
-           {divisionNames[districtIndex]}
-         </Button>))}
-         
-        
-      </ButtonGroup>
-      </Grid>
-      </Box>
-      
-      
-      <TableContainer className={classes.tContain} component={Paper}>
-        <Table stickyHeader className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Rank</TableCell>
-              <TableCell align="center">Name</TableCell>
-              <TableCell align="center">School</TableCell>
-              <TableCell align="center">Score</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.order}>
-                <TableCell component="th" scope="row">
-                  {row.rank}
-                </TableCell>
-                <TableCell align="center">{row.name}</TableCell>
-                <TableCell align="center">{row.schoolName}</TableCell>
-                <TableCell align="center">{row.score}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Container>
-    </ThemeProvider>
+  i
     ))}
     </>
   );
@@ -2432,7 +2433,12 @@ export async function getServerSideProps() {
        "codecomabtName": "ICE-KLNS-0527",
        "schoolName": "SKH HOLY TRINITY CHURCH SECONDARY SCHOOL",
        "creatorID": "61d29b9ff7358e11a026488d"
-     }
+     },
+     {
+      "codecomabtName": "ICE-KLNS-0578",
+      "schoolName": "KING GEORGE V SCHOOL",
+      "creatorID": "61d29c61f7358e11a02648c0"
+    }
     ];
 
 
