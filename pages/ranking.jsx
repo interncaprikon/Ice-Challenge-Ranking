@@ -5320,6 +5320,12 @@ export async function getServerSideProps() {
       "name": "Sem Mei Ieong"
     },
     {
+      "codecomabtName": "ICE-MOS-1156",
+      "schoolName": "The Affiliated School of the University of Macau (secondary)",
+      "creatorID": "61d29107f7358e11a026458d",
+      "name": "SIEK IN TOU"
+    },
+    {
       "codecomabtName": "ICE-MOS-1098",
       "schoolName": "Colegio de Santa Rosa de Lima Chinese Section",
       "creatorID": "61d29044f7358e11a0264553",
