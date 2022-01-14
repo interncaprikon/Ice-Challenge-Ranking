@@ -110,7 +110,7 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
-  hvheadhtml=(<ThemeProvider theme={theme}>
+  var hvheadhtml=(<ThemeProvider theme={theme}>
   <Container className={classes.fixed} maxWidth="md">
   
          <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
