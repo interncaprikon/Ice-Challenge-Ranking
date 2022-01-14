@@ -2952,7 +2952,13 @@ export async function getServerSideProps() {
       "schoolName": "KING GEORGE V SCHOOL",
       "creatorID": "61d29c61f7358e11a02648c0",
       "name": "Jian Xiang Xu"
-    }
+    },
+    {
+      "codecomabtName": "ICE-KLNP-0528",
+      "schoolName": "St. Patrick's Catholic Primary School (Po Kong Village Road)",
+      "creatorID": "61d29ba2f7358e11a026488e",
+      "name": "KAYLIA WONG"
+    },
    ];
 
 
