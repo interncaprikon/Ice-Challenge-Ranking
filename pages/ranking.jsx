@@ -86,23 +86,42 @@ export default function RankingList({
       const now = new Date();
       const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-      setDays(d);
+      var d = Math.floor(difference / (1000 * 60 * 60 * 24));
+     
 
-      const h = Math.floor(
+      var h = Math.floor(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      setHours(h);
+      
 
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      setMinutes(m);
+      var m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
-      setSeconds(s);
-
+      var s = Math.floor((difference % (1000 * 60)) / 1000);
+      
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         setPartyTime(true);
       }
+      d=d.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false
+        })
+      h=h.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false
+        })
+      m=m.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false
+        })
+      s=s.toLocaleString('en-US', {
+          minimumIntegerDigits: 2,
+          useGrouping: false
+        })
+      setDays(d);
+      setHours(h);
+      setMinutes(m);
+      setSeconds(s);
     }, 1000);
 
     return () => clearInterval(interval);
