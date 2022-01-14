@@ -100,6 +100,10 @@ export default function RankingList({
       var s = Math.floor((difference % (1000 * 60)) / 1000);
       
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+        d=0;
+        h=0;
+        m=0;
+        s=0;
         setPartyTime(true);
       }
       d=d.toLocaleString('en-US', {
