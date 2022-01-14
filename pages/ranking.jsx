@@ -73,9 +73,39 @@ export default function RankingList({
   const classes = useStyles();
   const [rows, setRowData] = useState([]);
   const [divisionTitle, setDivisionTitle] = useState("Overall");
-
+  const [partyTime, setPartyTime] = useState(false);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   useEffect(() => {
     loadsRankings(oRankings);
+    const target = new Date("01/14/2022 14:00:00");
+
+    const interval = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
+
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      setDays(d);
+
+      const h = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      setHours(h);
+
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      setMinutes(m);
+
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
+      setSeconds(s);
+
+      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+        setPartyTime(true);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
   }, []);
   function setColors(buttonindex){
     for (var colorsIndex=0;colorsIndex<colors.length;colorsIndex++){
@@ -110,7 +140,24 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
-  var hvheadhtml=(<ThemeProvider theme={theme}>
+ 
+
+  return (
+      <>
+    <Head>
+    <title>ICE Challenge - Ranking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </Head>
+  {notEmpty.length&&partyTime?(<ThemeProvider theme={theme}>
   <Container className={classes.fixed} maxWidth="md">
   
          <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
@@ -166,27 +213,33 @@ export default function RankingList({
       </Table>
     </TableContainer>
   </Container>
-  </ThemeProvider>);
-  if (notEmpty.length){var havehead=[hvheadhtml]}else{var havehead=[]}
-
-  return (
-      <>
-    <Head>
-    <title>ICE Challenge - Ranking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <link rel="icon" href="/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </Head>
-  {havehead.map((i) => (
-  i
-    ))}
+  </ThemeProvider>
+    ):(<>
+      <div className="timer-wrapper">
+        <div className="timer-inner">
+          <div className="timer-segment">
+            <span className="time">{days}</span>
+            <span className="label">Days</span>
+          </div>
+          <span className="divider">:</span>
+          <div className="timer-segment">
+            <span className="time">{hours}</span>
+            <span className="label">Hours</span>
+          </div>
+          <span className="divider">:</span>
+          <div className="timer-segment">
+            <span className="time">{minutes}</span>
+            <span className="label">Minutes</span>
+          </div>
+          <span className="divider">:</span>
+          <div className="timer-segment">
+            <span className="time">{seconds}</span>
+            <span className="label">Seconds</span>
+          </div>
+        </div>
+      </div>
+      
+    </>)}
     </>
   );
 }
