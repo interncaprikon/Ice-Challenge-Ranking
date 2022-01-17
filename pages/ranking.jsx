@@ -163,10 +163,7 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
- 
-
-  return (
-      <>
+  return ((notEmpty.length&&partyTime)?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -180,7 +177,7 @@ export default function RankingList({
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </Head>
-  {notEmpty.length&&partyTime?(<ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
   <Container className={classes.fixed} maxWidth="md">
   
          <Typography className={classes.sticky}  variant="h3" align="center" gutterBottom>
@@ -237,35 +234,49 @@ export default function RankingList({
     </TableContainer>
   </Container>
   </ThemeProvider>
+  </>
     ):(<>
-      
-        <div className="timer-inner">
-          <div className="timer-segment">
-            <span className="time">{days}</span>
-            <span className="label">Days</span>
-          </div>
-          <span className="divider">:</span>
-          <div className="timer-segment">
-            <span className="time">{hours}</span>
-            <span className="label">Hours</span>
-          </div>
-          <span className="divider">:</span>
-          <div className="timer-segment">
-            <span className="time">{minutes}</span>
-            <span className="label">Minutes</span>
-          </div>
-          <span className="divider">:</span>
-          <div className="timer-segment">
-            <span className="time">{seconds}</span>
-            <span className="label">Seconds</span>
-          </div>
+      <Head>
+    <title>ICE Challenge - Ranking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </Head>
+      <div className="timer-inner">
+        <div className="timer-segment">
+          <span className="time">{days}</span>
+          <span className="label">Days</span>
         </div>
-     
-      
-    </>)}
-    </>
-  );
-}
+        <span className="divider">:</span>
+        <div className="timer-segment">
+          <span className="time">{hours}</span>
+          <span className="label">Hours</span>
+        </div>
+        <span className="divider">:</span>
+        <div className="timer-segment">
+          <span className="time">{minutes}</span>
+          <span className="label">Minutes</span>
+        </div>
+        <span className="divider">:</span>
+        <div className="timer-segment">
+          <span className="time">{seconds}</span>
+          <span className="label">Seconds</span>
+        </div>
+      </div>
+   
+    
+  </>));
+ 
+
+  
+    }
 
 // This gets called on every request
 export async function getServerSideProps() {
