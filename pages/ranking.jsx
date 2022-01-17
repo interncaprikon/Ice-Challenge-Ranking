@@ -73,7 +73,7 @@ export default function RankingList({
   const classes = useStyles();
   const [rows, setRowData] = useState([]);
   const [divisionTitle, setDivisionTitle] = useState("Overall");
-  const [partyTime, setPartyTime] = useState(false);
+  const [partyTime, setPartyTime] = useState(true);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -104,8 +104,8 @@ export default function RankingList({
         h=0;
         m=0;
         s=0;
-        setPartyTime(true);
       }
+      else{setPartyTime(false);}
       d=d.toLocaleString('en-US', {
           minimumIntegerDigits: 2,
           useGrouping: false
