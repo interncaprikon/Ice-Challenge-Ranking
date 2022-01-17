@@ -1036,8 +1036,9 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      var studentScore=0;
         d.leagues.map((league)=>{
-          var studentScore=0;
+          
           if (league.leagueID=="61d3a182f4636d064c6f5de5"){
             studentScore=Math.floor(league.stats.totalScore * 100)
           };
@@ -2986,8 +2987,9 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      var studentScore=0;
       d.leagues.map((league)=>{
-        var studentScore=0;
+        
         if (league.leagueID=="61d39c5bf4636d064c6f5de4"){
           studentScore=Math.floor(league.stats.totalScore * 100)
         };
@@ -4871,8 +4873,9 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      var studentScore=0;
       d.leagues.map((league)=>{
-        var studentScore=0;
+        
         if (league.leagueID=="61d39821f4636d064c6f5de3"){
           studentScore=Math.floor(league.stats.totalScore * 100)
         };
