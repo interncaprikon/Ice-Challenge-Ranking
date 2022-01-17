@@ -163,8 +163,7 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
-  if(!notEmpty.length){return null}
-  return (partyTime?( <>
+  return ((notEmpty.length&&partyTime)?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
