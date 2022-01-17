@@ -1037,8 +1037,9 @@ export async function getServerSideProps() {
 
     if (student) {
         d.leagues.map((league)=>{
+          var studentScore=0;
           if (league.leagueID=="61d3a182f4636d064c6f5de5"){
-            var studentScore=Math.floor(league.stats.totalScore * 100)
+            studentScore=Math.floor(league.stats.totalScore * 100)
           };
         });
         hRankings.push({
@@ -2986,8 +2987,9 @@ export async function getServerSideProps() {
 
     if (student) {
       d.leagues.map((league)=>{
+        var studentScore=0;
         if (league.leagueID=="61d39c5bf4636d064c6f5de4"){
-          var studentScore=Math.floor(league.stats.totalScore * 100)
+          studentScore=Math.floor(league.stats.totalScore * 100)
         };
       });
       
@@ -4870,8 +4872,9 @@ export async function getServerSideProps() {
 
     if (student) {
       d.leagues.map((league)=>{
+        var studentScore=0;
         if (league.leagueID=="61d39821f4636d064c6f5de3"){
-          var studentScore=Math.floor(league.stats.totalScore * 100)
+          studentScore=Math.floor(league.stats.totalScore * 100)
         };
       });
       
