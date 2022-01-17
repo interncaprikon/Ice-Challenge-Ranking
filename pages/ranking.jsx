@@ -143,7 +143,7 @@ export default function RankingList({
 	  let oldscore=0;
     let oldrank=0;
     rankings.map((rank, index) => {
-      if (index<50){
+      if (index<=50){
       if (oldscore===rank.score){
       data.push(
         createData(index+1,oldrank, rank.name, rank.schoolName, rank.score)
