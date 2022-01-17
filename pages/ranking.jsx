@@ -5499,17 +5499,24 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      var studentScore=0;
+        d.leagues.map((league)=>{
+          
+          if (league.leagueID=="61d3966df4636d064c6f5de2"){
+            studentScore=Math.floor(league.stats.totalScore * 100)
+          };
+        });
       
         mRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
         oRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
       }
