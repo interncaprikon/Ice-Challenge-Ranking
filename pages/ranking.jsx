@@ -163,7 +163,8 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   };
-  return ((notEmpty.length&&partyTime)?( <>
+  if(!notEmpty.length){return}
+  return (partyTime?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -1035,17 +1036,21 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
-      
+        d.leagues.map((league)=>{
+          if (league.leagueID=="61d3a182f4636d064c6f5de5"){
+            studentScore=Math.floor(league.stats.totalScore * 100)
+          };
+        });
         hRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
         oRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
       }
@@ -2980,17 +2985,22 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      d.leagues.map((league)=>{
+        if (league.leagueID=="61d39c5bf4636d064c6f5de4"){
+          studentScore=Math.floor(league.stats.totalScore * 100)
+        };
+      });
       
         kRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
         oRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
       }
@@ -4859,17 +4869,22 @@ export async function getServerSideProps() {
     )[0];
 
     if (student) {
+      d.leagues.map((league)=>{
+        if (league.leagueID=="61d39821f4636d064c6f5de3"){
+          studentScore=Math.floor(league.stats.totalScore * 100)
+        };
+      });
       
         nRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
         oRankings.push({
           name: student.name,
           schoolName: student.schoolName,
-          score: Math.floor(d.leagues[0].stats.totalScore * 100),
+          score: studentScore,
           
         });
       }
