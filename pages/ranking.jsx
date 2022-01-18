@@ -5351,7 +5351,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-MOS-1156",
       "schoolName": "The Affiliated School of the University of Macau (secondary)",
       "creatorID": "61d29107f7358e11a026458d",
-      "name": "SIEK IN TOU"
+      "name": "IEK IN TOU"
     },
     {
       "codecomabtName": "ICE-MOS-1098",
