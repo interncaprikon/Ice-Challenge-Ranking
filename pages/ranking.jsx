@@ -3184,12 +3184,7 @@ export async function getServerSideProps() {
       "creatorID": "61d29207f7358e11a02645da",
       "name": "Yan Yin, Emmet CHEUNG "
     },
-    {
-      "codecomabtName": "ICE-NTP-0657",
-      "schoolName": "MA ON SHAN ST. JOSEPH'S PRIMARY SCHOOL",
-      "creatorID": "61d2920af7358e11a02645db",
-      "name": "Yat Yee, Ultan CHEUNG "
-    },
+    
     {
       "codecomabtName": "ICE-NTP-0658",
       "schoolName": "PLK SIU HON SUM PRIMARY SCHOOL",
