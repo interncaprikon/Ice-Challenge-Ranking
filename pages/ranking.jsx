@@ -4605,7 +4605,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-NTS-0893",
       "schoolName": "Cotton Spinners Association Secondary School",
       "creatorID": "61d29530f7358e11a02646c7",
-      "name": "CSA 1"
+      "name": "Jun Rong ZHU"
     },
     {
       "codecomabtName": "ICE-NTS-0894",
@@ -4617,7 +4617,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-NTS-0895",
       "schoolName": "Cotton Spinners Association Secondary School",
       "creatorID": "61d2953cf7358e11a02646c9",
-      "name": "CSA 3"
+      "name": "Zhong Xian PANG"
     },
     {
       "codecomabtName": "ICE-NTS-0896",
@@ -4635,13 +4635,13 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-NTS-0898",
       "schoolName": "Cotton Spinners Association Secondary School",
       "creatorID": "61d29547f7358e11a02646cc",
-      "name": "CSA 6"
+      "name": "Zi Ji LIAO"
     },
     {
       "codecomabtName": "ICE-NTS-0899",
       "schoolName": "Cotton Spinners Association Secondary School",
       "creatorID": "61d2954bf7358e11a02646cd",
-      "name": "CSA 7"
+      "name": "Jun Zhi WANG"
     },
     {
       "codecomabtName": "ICE-NTS-0900",
