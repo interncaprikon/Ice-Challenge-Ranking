@@ -1866,7 +1866,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-KLNP-0343",
       "schoolName": "Diocesan Boys' School Primary Division",
       "creatorID": "61d2991ef7358e11a02647d6",
-      "name": "James Jun Qian Yeung, "
+      "name": "James Jun Qian Yeung"
     },
     {
       "codecomabtName": "ICE-KLNP-0344",
@@ -3104,13 +3104,13 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-NTP-0643",
       "schoolName": "TAI PO OLD MARKET PUBLIC SCHOOL",
       "creatorID": "61d291e1f7358e11a02645cd",
-      "name": "Man Kwong yiu"
+      "name": "Kwong yiu Man"
     },
     {
       "codecomabtName": "ICE-NTP-0644",
       "schoolName": "TAI PO OLD MARKET PUBLIC SCHOOL",
       "creatorID": "61d291e3f7358e11a02645ce",
-      "name": "KUANG YU CHIU"
+      "name": "YU CHIU KUANG"
     },
     {
       "codecomabtName": "ICE-NTP-0645",
@@ -5039,7 +5039,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-MOP-1050",
       "schoolName": "Puiva Middle school of Macao",
       "creatorID": "61d28facf7358e11a0264523",
-      "name": "Rodrigues Leao Vivalde "
+      "name": "Vivalde Rodrigues Leao"
     },
     {
       "codecomabtName": "ICE-MOP-1051",
@@ -5393,7 +5393,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-MOP-1104",
       "schoolName": "The Affiliated School of the University of Macau",
       "creatorID": "61d2905af7358e11a0264559",
-      "name": "KA HOU LAI,"
+      "name": "KA HOU LAI"
     },
     {
       "codecomabtName": "ICE-MOP-1105",
@@ -5411,7 +5411,7 @@ export async function getServerSideProps() {
       "codecomabtName": "ICE-MOP-1107",
       "schoolName": "The Affiliated School of the University of Macau",
       "creatorID": "61d29065f7358e11a026455c",
-      "name": "LUIZA BOTELHO"
+      "name": "BOTELHO LUIZA"
     },
     {
       "codecomabtName": "ICE-MOP-1108",
