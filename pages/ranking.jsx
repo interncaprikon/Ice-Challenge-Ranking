@@ -2277,6 +2277,12 @@ export async function getServerSideProps() {
       "name": "Chi Ching Tai"
     },
     {
+      "codecomabtName": "ICE-KLNS-0579",
+      "schoolName": "International Christian Quality Music Secondary and Primary School",
+      "creatorID": "61d29c65f7358e11a02648c1",
+      "name": "Samuel Wan"
+    },
+    {
       "codecomabtName": "ICE-KLNS-0413",
       "schoolName": "BISHOP HALL JUBILEE SCHOOL",
       "creatorID": "61d299fef7358e11a026481b",
@@ -4390,6 +4396,12 @@ export async function getServerSideProps() {
       "schoolName": "Queen Elizabeth School Old Students' Association Secondary School",
       "creatorID": "61d294aaf7358e11a02646a3",
       "name": "Chiu Hung Wong"
+    },
+    {
+      "codecomabtName": "ICE-NTS-0986",
+      "schoolName": "Queen Elizabeth School Old Students' Association Secondary School",
+      "creatorID": "61d29692f7358e11a0264724",
+      "name": "Sheung Kei Chiang"
     },
     {
       "codecomabtName": "ICE-NTS-0858",
