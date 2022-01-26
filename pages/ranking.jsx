@@ -160,13 +160,13 @@ export default function RankingList({
   const districtRankings=[oRankings,hRankings,kRankings,nRankings,mRankings]
   const MOstart = new Date("03/01/2022 14:00:00");
   const timeNow = new Date();
-  if ( MOstart.getTime() - timeNow.getTime()<=0);
-  const divisionNames=( MOstart.getTime() - timeNow.getTime()<=0)?["Overall","Hong Kong Island","Kowloon","New Territories","Macau"]:["Overall","Hong Kong Island","Kowloon","New Territories"];
+  const divisionNames=["Overall","Hong Kong Island","Kowloon","New Territories","Macau"];
   var notEmpty=[];
-  for (var divisionIndex=0;divisionIndex<districtRankings.length;divisionIndex++){
+  for (var divisionIndex=0;divisionIndex<districtRankings.length-1;divisionIndex++){
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
-  };
+  }
+  if ( MOstart.getTime() - timeNow.getTime()<=0){notEmpty.push(districtRankings.length-1)};
   return ((notEmpty.length&&partyTime)?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
