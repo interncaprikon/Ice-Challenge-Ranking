@@ -1465,7 +1465,7 @@ export async function getServerSideProps() {
     },
     {
       "codecomabtName": "ICE-KLNP-0276",
-      "schoolName": "Alliance Primary School, Kowloon Tong",
+      "schoolName": "YING WA PRIMARY SCHOOL",
       "creatorID": "61e12551e3ee71576b8f09e5",
       "name": "Sihong, Ethan ZHOU "
     },
