@@ -158,7 +158,7 @@ export default function RankingList({
     setRowData(data);
   }
   const districtRankings=[oRankings,hRankings,kRankings,nRankings,mRankings]
-  const MOstart = new Date("01/14/2022 14:00:00");
+  const MOstart = new Date("03/01/2022 14:00:00");
   const timeNow = new Date();
   if ( MOstart.getTime() - timeNow.getTime()<=0);
   const divisionNames=( MOstart.getTime() - timeNow.getTime()<=0)?["Overall","Hong Kong Island","Kowloon","New Territories","Macau"]:["Overall","Hong Kong Island","Kowloon","New Territories"];
