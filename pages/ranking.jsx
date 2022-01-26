@@ -1032,7 +1032,7 @@ export async function getServerSideProps() {
 
   hdata.map((d) => {
     let student = HKschoolData.filter(
-      (x) => x.creatorID === d.creator
+      (x) => x.creatorID === d.creator ||x.codecomabtName === d.creatorName
     )[0];
 
     if (student) {
@@ -2989,7 +2989,7 @@ export async function getServerSideProps() {
 
   kdata.map((d) => {
     let student = KLNschoolData.filter(
-      (x) => x.creatorID === d.creator
+      (x) => x.creatorID === d.creator ||x.codecomabtName === d.creatorName
     )[0];
 
     if (student) {
@@ -4876,7 +4876,7 @@ export async function getServerSideProps() {
 
   ndata.map((d) => {
     let student = NTschoolData.filter(
-      (x) => x.creatorID === d.creator
+      (x) => x.creatorID === d.creator ||x.codecomabtName === d.creatorName
     )[0];
 
     if (student) {
@@ -5502,7 +5502,7 @@ export async function getServerSideProps() {
 
   mdata.map((d) => {
     let student = MOschoolData.filter(
-      (x) => x.creatorID === d.creator
+      (x) => x.creatorID === d.creator ||x.codecomabtName === d.creatorName
     )[0];
 
     if (student) {
