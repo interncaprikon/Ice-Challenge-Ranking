@@ -86,18 +86,18 @@ export default function RankingList({
       const now = new Date();
       const difference = target.getTime() - now.getTime();
 
-      var d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      var d = Math.trunc(difference / (1000 * 60 * 60 * 24));
      
 
-      var h = Math.floor(
+      var h = Math.trunc(
         (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       
 
-      var m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      var m = Math.trunc((difference % (1000 * 60 * 60)) / (1000 * 60));
       
 
-      var s = Math.floor((difference % (1000 * 60)) / 1000);
+      var s = Math.trunc((difference % (1000 * 60)) / 1000);
       
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         d=0;
@@ -1040,7 +1040,7 @@ export async function getServerSideProps() {
         d.leagues.map((league)=>{
           
           if (league.leagueID=="61d3a182f4636d064c6f5de5"){
-            studentScore=Math.floor(league.stats.totalScore * 100)
+            studentScore=Math.trunc(league.stats.totalScore * 100)
           };
         });
         hRankings.push({
@@ -2997,7 +2997,7 @@ export async function getServerSideProps() {
       d.leagues.map((league)=>{
         
         if (league.leagueID=="61d39c5bf4636d064c6f5de4"){
-          studentScore=Math.floor(league.stats.totalScore * 100)
+          studentScore=Math.trunc(league.stats.totalScore * 100)
         };
       });
       
@@ -4884,7 +4884,7 @@ export async function getServerSideProps() {
       d.leagues.map((league)=>{
         
         if (league.leagueID=="61d39821f4636d064c6f5de3"){
-          studentScore=Math.floor(league.stats.totalScore * 100)
+          studentScore=Math.trunc(league.stats.totalScore * 100)
         };
       });
       
@@ -5510,7 +5510,7 @@ export async function getServerSideProps() {
         d.leagues.map((league)=>{
           
           if (league.leagueID=="61d3966df4636d064c6f5de2"){
-            studentScore=Math.floor(league.stats.totalScore * 100)
+            studentScore=Math.trunc(league.stats.totalScore * 100)
           };
         });
       
