@@ -5523,12 +5523,15 @@ export async function getServerSideProps() {
           score: studentScore,
           
         });
+        const MOstart = new Date("03/01/2022 14:00:00");
+    const timeNow = new Date();
+        if ( MOstart.getTime() - timeNow.getTime()<=0){
         oRankings.push({
           name: student.name,
           schoolName: student.schoolName,
           score: studentScore,
           
-        });
+        })};
       }
   });
 
