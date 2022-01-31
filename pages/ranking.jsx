@@ -166,7 +166,7 @@ export default function RankingList({
     if (districtRankings[divisionIndex].length){
     notEmpty.push(divisionIndex)}
   }
-  if ( MOstart.getTime() - timeNow.getTime()<=0){notEmpty.push(districtRankings.length-1)};
+  if (( MOstart.getTime() - timeNow.getTime()<=0)&&mRankings.length){notEmpty.push(districtRankings.length-1)};
   return ((notEmpty.length&&partyTime)?( <>
     <Head>
     <title>ICE Challenge - Ranking</title>
