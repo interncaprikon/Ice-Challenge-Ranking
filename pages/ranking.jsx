@@ -2865,7 +2865,7 @@ export async function getServerSideProps() {
       "codecombatName": "ICE-KLNS-0509",
       "schoolName": "Hoi Ping Chamber of Commerce Secondary School",
       "creatorID": "61d29b5ff7358e11a026487b",
-      "name": "Chin Yin Liang"
+      "name": "Chun Yin Liang"
     },
     {
       "codecombatName": "ICE-KLNS-0510",
