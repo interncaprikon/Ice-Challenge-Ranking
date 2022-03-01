@@ -291,7 +291,7 @@ export async function getServerSideProps() {
   const nRankings = [];
   const mRankings = [];
   const hres = await fetch(
-    `https://codecombat.com/db/level/5fca06dc8b4da8002889dbf1/rankings?order=-1&scoreOffset=1000000&team=humans&leagues.leagueID=61d3a182f4636d064c6f5de5&limit=100`
+    ``
   );
   const hdata = await hres.json();
   
