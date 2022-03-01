@@ -1741,9 +1741,9 @@ export async function getServerSideProps() {
     },
     {
       "codecombatName": "ICE-KLNP-0322",
-      "schoolName": "YAUMATI CATHOLIC PRIMARY SCHOOL",
+      "schoolName": "YAUMATI CATHOLIC PRIMARY SCHOOL (HOI WANG ROAD)",
       "creatorID": "61d298d7f7358e11a02647c1",
-      "name": "Jasper SIU "
+      "name": "Shi Yiu Jasper SIU "
     },
     {
       "codecombatName": "ICE-KLNP-0323",
@@ -3780,7 +3780,7 @@ export async function getServerSideProps() {
       "codecombatName": "ICE-NTS-0754",
       "schoolName": "IMMACULATE HEART OF MARY COLLEGE",
       "creatorID": "61d2934ef7358e11a026463c",
-      "name": "Chit Hei MA"
+      "name": "Chit Hei MAK"
     },
     {
       "codecombatName": "ICE-NTS-0755",
