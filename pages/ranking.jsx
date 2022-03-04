@@ -5499,6 +5499,366 @@ export async function getServerSideProps() {
       "schoolName": "The Affiliated School of the University of Macau",
       "creatorID": "61d2908af7358e11a0264568",
       "name": "Ngai Cheng Wong"
+    },
+    {
+      "codecombatName": "ICE-MOP-1120",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2908ef7358e11a0264569",
+      "name": "HO IN LOK"
+    },
+    {
+      "codecombatName": "ICE-MOP-1121",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29090f7358e11a026456a",
+      "name": "CHEANG HOU PAK"
+    },
+    {
+      "codecombatName": "ICE-MOP-1122",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29093f7358e11a026456b",
+      "name": "TANG IAN NOK"
+    },
+    {
+      "codecombatName": "ICE-MOP-1123",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29096f7358e11a026456c",
+      "name": "NGAI KIT SENG JACKSON"
+    },
+{
+      "codecombatName": "ICE-MOP-1124",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29099f7358e11a026456d",
+      "name": "GEE MEI SAN"
+    },
+    {
+      "codecombatName": "ICE-MOP-1125",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2909df7358e11a026456e",
+      "name": "SI I KONG"
+    },
+    {
+      "codecombatName": "ICE-MOP-1126",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290a0f7358e11a026456f",
+      "name": "LO TIN IAT"
+    },
+    {
+      "codecombatName": "ICE-MOP-1127",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290a2f7358e11a0264570",
+      "name": "VONG CHENG HONG"
+    },
+    {
+      "codecombatName": "ICE-MOP-1128",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290a7f7358e11a0264571",
+      "name": "CHEANG IAN TONG"
+    },
+    {
+      "codecombatName": "ICE-MOP-1129",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290acf7358e11a0264572",
+      "name": "CHU NGOU HEI"
+    },
+    {
+      "codecombatName": "ICE-MOP-1130",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290b1f7358e11a0264573",
+      "name": "TO CHAK SENG"
+    },
+    {
+      "codecombatName": "ICE-MOP-1131",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290b3f7358e11a0264574",
+      "name": "CHEONG HOI IOI"
+    },
+    {
+      "codecombatName": "ICE-MOP-1132",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290b7f7358e11a0264575",
+      "name": "VONG HOU KEI"
+    },
+    {
+      "codecombatName": "ICE-MOP-1133",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290b9f7358e11a0264576",
+      "name": "LAI KA YUI"
+    },
+    {
+      "codecombatName": "ICE-MOP-1134",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d290bdf7358e11a0264577",
+      "name": "WONG HOU CHENG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1157",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2910af7358e11a026458e",
+      "name": "WU, IAT LONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1158",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2910ef7358e11a026458f",
+      "name": "WU, NOK IAN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1159",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29111f7358e11a0264590",
+      "name": "IEONG CHON HEI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1160",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29114f7358e11a0264591",
+      "name": "LIN TONG PUI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1161",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29117f7358e11a0264592",
+      "name": "LEI, WENG CHON"
+    },
+    {
+      "codecombatName": "ICE-MOS-1162",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2911af7358e11a0264593",
+      "name": "LI ZHUOCHENG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1163",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2911df7358e11a0264594",
+      "name": "NG, MAN WAI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1164",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29120f7358e11a0264595",
+      "name": "LEI, TEK LONG BRENDON"
+    },
+    {
+      "codecombatName": "ICE-MOS-1165",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29122f7358e11a0264596",
+      "name": "MAK, IENG FONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1166",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29126f7358e11a0264597",
+      "name": "LIO, PAK LAM"
+    },
+    {
+      "codecombatName": "ICE-MOS-1167",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2912af7358e11a0264598",
+      "name": "LONG, SI CHENG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1168",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d2912ef7358e11a0264599",
+      "name": "CHEOK CHI TONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1169",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29130f7358e11a026459a",
+      "name": "NGAN, CHENG I"
+    },
+    {
+      "codecombatName": "ICE-MOS-1170",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29133f7358e11a026459b",
+      "name": "CHIO, CHI CHON"
+    },
+    {
+      "codecombatName": "ICE-MOS-1171",
+      "schoolName": "Pui Ching Middle School, Macao",
+      "creatorID": "61d29136f7358e11a026459c",
+      "name": "LEONG CHENG LOK"
+    },
+    {
+      "codecombatName": "ICE-MOP-1135",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d290bff7358e11a0264578",
+      "name": "CHAN SEONG LAI"
+    },
+    {
+      "codecombatName": "ICE-MOP-1136",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d290c2f7358e11a0264579",
+      "name": "CHIANG MAN LOK"
+    },
+    {
+      "codecombatName": "ICE-MOP-1137",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d290c5f7358e11a026457a",
+      "name": "SOU LOK IO"
+    },
+    {
+      "codecombatName": "ICE-MOS-1172",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29138f7358e11a026459d",
+      "name": "SHI KAI YI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1173",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2913cf7358e11a026459e",
+      "name": "LEONG, CHI MEI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1174",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29141f7358e11a026459f",
+      "name": "ZENG, WAI PAN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1175",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29144f7358e11a02645a0",
+      "name": "AO, KAM HONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1176",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29147f7358e11a02645a1",
+      "name": "HO PAK NGAI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1177",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2914af7358e11a02645a2",
+      "name": "WONG, CHING HIN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1178",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2914cf7358e11a02645a3",
+      "name": "WAN JIAYING"
+    },
+    {
+      "codecombatName": "ICE-MOS-1179",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2914ff7358e11a02645a4",
+      "name": "TENG HOI YEE"
+    },
+    {
+      "codecombatName": "ICE-MOS-1180",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29151f7358e11a02645a5",
+      "name": "LAM, PAK LOK"
+    },
+    {
+      "codecombatName": "ICE-MOS-1181",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29159f7358e11a02645a6",
+      "name": "NG, KUAN HOU"
+    },
+    {
+      "codecombatName": "ICE-MOS-1182",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2915bf7358e11a02645a7",
+      "name": "LAM, POK HONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1183",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29161f7358e11a02645a8",
+      "name": "GUO, ANA"
+    },
+    {
+      "codecombatName": "ICE-MOS-1184",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29164f7358e11a02645a9",
+      "name": "CHAN, HIN IN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1185",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29169f7358e11a02645aa",
+      "name": "IEONG, CORY HOI YIP"
+    },
+    {
+      "codecombatName": "ICE-MOS-1186",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2916cf7358e11a02645ab",
+      "name": "WONG, IN CHI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1187",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29170f7358e11a02645ac",
+      "name": "LAM CHON NGAI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1188",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29173f7358e11a02645ad",
+      "name": "WONG, MIN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1189",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29176f7358e11a02645ae",
+      "name": "KUAN, SU MENG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1190",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29179f7358e11a02645af",
+      "name": "HO, TENG HIM"
+    },
+    {
+      "codecombatName": "ICE-MOS-1191",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2917cf7358e11a02645b0",
+      "name": "U, LEK HANG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1192",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29180f7358e11a02645b1",
+      "name": "LEE, KUN CHIT"
+    },
+    {
+      "codecombatName": "ICE-MOS-1193",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29184f7358e11a02645b2",
+      "name": "CHIANG, CHI HANG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1194",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29188f7358e11a02645b3",
+      "name": "SO, CHEOK KIO"
+    },
+    {
+      "codecombatName": "ICE-MOS-1195",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2918af7358e11a02645b4",
+      "name": "LEI, SI WAI"
+    },
+    {
+      "codecombatName": "ICE-MOS-1196",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d2918ef7358e11a02645b5",
+      "name": "CHAN, KUAN IEONG"
+    },
+    {
+      "codecombatName": "ICE-MOS-1197",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29191f7358e11a02645b6",
+      "name": "LAO, CHIT BRYAN"
+    },
+    {
+      "codecombatName": "ICE-MOS-1198",
+      "schoolName": "Macau Science and Technology Innovation Education Association",
+      "creatorID": "61d29194f7358e11a02645b7",
+      "name": "CHAN WANG CHON"
     }
    ];
 
